@@ -1,7 +1,5 @@
 package com.jap.pizzaorder;
 
-import java.util.Scanner;
-
 public class PizzaOrder {
     public void displayCustomerDetails(String name, String email, long phoneNo, String address) {
         System.out.println("Customer Details ");
@@ -46,7 +44,7 @@ public class PizzaOrder {
     }
 
     public float calculatePriceOfPizza(int noOfPizza, float priceOfPizza) {
-        if (priceOfPizza <= 0 || noOfPizza <=0) {
+        if (priceOfPizza <= 0 || noOfPizza <= 0) {
             return -1;
         } else {
             return noOfPizza * priceOfPizza;
@@ -56,18 +54,16 @@ public class PizzaOrder {
     public float calculatePriceOfGarlicBread(int noOfGarlicBread, float priceOfGarlicBread) {
         if (priceOfGarlicBread <= 0 || noOfGarlicBread <= 0) {
             return -1;
-        }
-        else{
+        } else {
             return noOfGarlicBread * priceOfGarlicBread;
         }
 
     }
 
     public float calculatePriceOfBeverage(int noOfBeverages, float priceOfBeverages) {
-        if (priceOfBeverages <= 0 || noOfBeverages<=0) {
+        if (priceOfBeverages <= 0 || noOfBeverages <= 0) {
             return -1;
-        }
-        else{
+        } else {
             return noOfBeverages * priceOfBeverages;
         }
 
@@ -107,8 +103,6 @@ public class PizzaOrder {
     public float getPriceOfBeverage() {
         return 1.99f;
     }
-
-
 
 
 }
